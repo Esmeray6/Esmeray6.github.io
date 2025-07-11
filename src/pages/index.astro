@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import AETImage from "../assets/AET.png";
 import AvatarImage from "../assets/avatar.png";
+import TTBImage from "../assets/TTB.png";
 import BaseHead from "../components/BaseHead.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
@@ -27,6 +28,19 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
                 free time. You may have met me from the two teams that I'm part
                 of:
             </p>
+            <!-- TODO: Add ttb logo next to the link -->
+            <div class="flex flex-row content-evenly items-center">
+                <Image
+                    src={TTBImage}
+                    alt="AET Logo"
+                    class="mr-2 h-16 w-16 rounded-full"
+                />
+                <h2>
+                    <a href="https://discord.gg/YYtpYBr" target="_blank">
+                        to the beat!
+                    </a>
+                </h2>
+            </div>
             <!-- TODO: Add AET logo next to the link -->
             <div class="flex flex-row content-evenly items-center">
                 <Image
@@ -37,19 +51,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
                 <h2 class="text-2xl">
                     <a href="https://discord.gg/TYDwCRKnKX" target="_blank">
                         Antistasi Event Team
-                    </a>
-                </h2>
-            </div>
-            <!-- TODO: Add ttb logo next to the link -->
-            <div class="flex flex-row content-evenly items-center">
-                <Image
-                    src={AETImage}
-                    alt="AET Logo"
-                    class="mr-2 h-16 w-16 rounded-full"
-                />
-                <h2>
-                    <a href="https://discord.gg/YYtpYBr" target="_blank">
-                        to the beat!
                     </a>
                 </h2>
             </div>
