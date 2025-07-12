@@ -4,6 +4,7 @@ import AETImage from "../assets/AET.png";
 import AvatarImage from "../assets/avatar.png";
 import TTBImage from "../assets/TTB.png";
 import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
@@ -19,19 +20,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
             <h1 class="text-2xl">🧑‍🚀 Hello, Astronaut!</h1>
             <Image
                 src={AvatarImage}
-                alt="Avatar Image"
+                alt="Sky's Avatar"
+                loading="eager"
                 class="h-64 w-64 rounded-full"
             />
             <h2 class="text-xl">My name is Sky!</h2>
-            <p class="text-xl">
+            <p class="w-6xl text-xl">
                 I'm a trans girl working on several projects and teams in my
                 free time. You may have met me from the two teams that I'm part
                 of:
             </p>
-            <!-- TODO: Add ttb logo next to the link -->
-            <div class="flex flex-row content-evenly items-center">
+            <!-- ttb -->
+            <div class="mt-1 mb-1 flex flex-row content-evenly items-center">
                 <Image
                     src={TTBImage}
+                    loading="eager"
                     alt="AET Logo"
                     class="mr-2 h-16 w-16 rounded-full"
                 />
@@ -41,11 +44,28 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
                     </a>
                 </h2>
             </div>
-            <!-- TODO: Add AET logo next to the link -->
-            <div class="flex flex-row content-evenly items-center">
+            <p class="w-6xl">
+                Having become one of the new owners of ttb! in 2018 along with
+                Kira, I've mainly focused on everything technical for the team
+                or the Discord server, such as Discord bots or services that
+                were used internally. However, I also occasionally helped run
+                the YouTube channel by working on score screens, recording
+                plays, and otherwise help with organizing videos. Around 2020,
+                Kira resigned officially and Taki was invited to take his place.
+                <br />
+                Nowadays, Taki focuses on the YouTube channel and anything related
+                to it, while I focus on managing the Discord server, internal record-keeping,
+                and the YouTube channel.
+                <br />
+                Before I became the owner, I mainly helped with creating score screens
+                and recording plays.
+            </p>
+            <!-- AET -->
+            <div class="mt-1 mb-1 flex flex-row content-evenly items-center">
                 <Image
                     src={AETImage}
                     alt="AET Logo"
+                    loading="eager"
                     class="mr-2 h-16 w-16 rounded-full"
                 />
                 <h2 class="text-2xl">
@@ -54,7 +74,25 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
                     </a>
                 </h2>
             </div>
+            <p class="w-6xl">
+                In 2023, I joined the team as a helper, focusing on missions
+                with the <a
+                    href="https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/"
+                    target="_blank">SOGPF CDLC</a
+                > for <a
+                    href="https://store.steampowered.com/app/107410/Arma_3/"
+                    target="_blank">
+                    Arma 3
+                </a>. After hosting several missions on top of assisting the
+                team by developing various tools, during early 2024, I became a
+                full team member and shortly after that, a QA Tester for the
+                hosted missions. On top of this, I became the Event Team 2iC
+                (Second-in-Command/Charge). Whenever both of the Event Team
+                Leads were busy, I would be called to help run the team when it
+                was needed.
+            </p>
         </div>
-        <!-- <Footer /> -->
+
+        <Footer />
     </body>
 </html>
